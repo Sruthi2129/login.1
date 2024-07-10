@@ -1,0 +1,22 @@
+{% extends "common.html" %}
+
+
+@Facebook.route('/reg')
+def Reg():
+    return render_template("reg.html")
+
+@Facebook.route('/profile')
+def profile():
+    return render_template("profile.html")
+
+@Facebook.route('/running')
+def running():
+    return render_template("running.html")
+
+@Facebook.route('/logout')
+def logout():
+    return render_template("logout.html")
+
+@Facebook.route('/')
+def common():
+    return render_template("common.html")
